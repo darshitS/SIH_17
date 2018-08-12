@@ -1,0 +1,188 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+  *= require_self
+ *= require sweetalert2
+ *= require_tree .
+ *= require trix
+ */
+
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+
+.main-yield
+{
+  margin-top: 60px;
+  margin-left: 400px;
+}
+
+.home-sign-in-up
+{
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+
+#sidebar-left
+{
+  font-size: 20px;
+	background:#e7e7e7;
+	width:300px;
+	height:100%;
+	display:block;
+	position:fixed;
+	left: 0px;
+	top: 55px;
+  overflow: auto;
+}
+
+#sidebar-left.visible
+{
+	left:0px;
+}
+
+#sidebar-left ul
+{
+	margin:0px;
+	padding:0px;
+}
+
+#sidebar-left ul li
+{
+  text-align: center;
+	list-style:none;
+}
+
+#sidebar-left ul li a
+{
+	background: #E8E8E8;
+	color:#101010;
+	border-bottom:1px solid #111;
+	display:block;
+	width:298px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#sidebar-left ul li a:hover
+{
+	color: #ccc;
+}
+
+#sidebar-btn-left
+{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:relative;
+	top: 0px;
+  color: #9d9d9d;
+  display: none;
+}
+#sidebar-btn-left:hover
+{
+  color: white;
+}
+
+.news-img
+{
+  height: 300px;
+  width: 300px;
+}
+
+.appl-appl
+{
+  text-align: left;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .appl-appl
+  {
+    margin-left: 30px;
+  }
+  .main-yield
+  {
+    margin-left: 0px;
+  }
+
+  #sidebar-btn-left
+  {
+    display:inline-block;
+    vertical-align: middle;
+    width:20px;
+    height:15px;
+    cursor:pointer;
+    margin:20px;
+    position:relative;
+    top: 0px;
+    color: #777;
+  }
+  #sidebar-btn-left:hover
+  {
+    color: #333333;
+  }
+
+  #sidebar-left
+  {
+
+  	background:#e7e7e7;
+  	width:300px;
+  	height:100%;
+  	display:block;
+  	position:fixed;
+  	left: -350px;
+  	top: 55px;
+  	transition:left 0.3s linear;
+    overflow: auto;
+  }
+
+  #sidebar-left.visible
+  {
+  	left:0px;
+  	transition:left 0.3s linear;
+  }
+
+  #sidebar-left ul
+  {
+  	margin:0px;
+  	padding:0px;
+  }
+
+  #sidebar-left ul li
+  {
+    text-align: center;
+  	list-style:none;
+  }
+
+  #sidebar-left ul li a
+  {
+  	background: #E8E8E8;
+  	color:#101010;
+  	border-bottom:1px solid #111;
+  	display:block;
+  	width:298px;
+  	padding:10px;
+  	text-decoration: none;
+  }
+
+  #sidebar-left ul li a:hover
+  {
+  	color: #ccc;
+  }
+
+}
